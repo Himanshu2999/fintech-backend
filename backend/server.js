@@ -13,12 +13,12 @@ app.use(exp.json())
 app.use(exp.urlencoded({extended: false}))
 
 app.use(cors({
-    origin: "http://localhost:5173", 
+    origin: "https://fintech-frontend-liart.vercel.app/", 
     credentials: true
 }));
 
 
-mg.connect('mongodb://localhost:27017/Fintech').then(()=>console.log("Connected to mongodb"))
+mg.connect('mongodb+srv://himanshucolleg_db_user:2BEhhfeDJj5nWuax@sim-cluster.yu5bdrg.mongodb.net/?appName=SIM-Cluster').then(()=>console.log("Connected to mongodb"))
 
 
 app.use("/api", uplodroutes)
