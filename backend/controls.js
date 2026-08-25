@@ -90,7 +90,7 @@ exports.acceptrequest = async(req,res)=>{
         }
       catch (e) {
         res.status(507).json({ statuscode: -1, error: e.code })
-    }s
+    }
 }
 
 // post apis ending....  //
