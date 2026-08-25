@@ -13,7 +13,7 @@ app.use(exp.json())
 app.use(exp.urlencoded({extended: false}))
 
 app.use(cors({
-    origin: "https://fintech-frontend-liart.vercel.app/", 
+    origin: "https://fintech-frontend-liart.vercel.app", 
     credentials: true
 }));
 
