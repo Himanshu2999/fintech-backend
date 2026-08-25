@@ -12,7 +12,7 @@ exports.createProfile = async (req, res) => {
         const hash = await by.hash(req.body.pass, 10)
         const data = new sitemodel.usermodel({name: req.body.name, email: req.body.email, mobile: req.body.mobile,
             password: hash , 
-        })ḥ
+        })
         await data.save();
 
         res.status(200).json({
