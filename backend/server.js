@@ -26,13 +26,8 @@ app.use("/api", usrroutes)
 
 mg.set('strictQuery', false)
 
-const PORT = process.env.PORT || 9000
-
 app.get('/', (req,res)=>{
     res.send("welcome to our website")
 }) 
 
-app.listen(PORT, ()=>{
-    console.log("Server is running");
-});
 
