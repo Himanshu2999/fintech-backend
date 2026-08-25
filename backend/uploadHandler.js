@@ -7,7 +7,7 @@ const sitemodel = require("./models")
 
 const store = mlt.diskStorage({
     destination: (req, file, cb) => {
-        const dir = pt.join(__dirname, "..", "FinTech", "public", "uploads", "profiles");
+        const dir = "uploads/profiles"
         cb(null, dir)
     },
     filename: (req, file, cb) => {
